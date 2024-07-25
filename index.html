@@ -34,35 +34,12 @@
             color: #f4f4f9;
             text-align: center;
         }
-        form {
+        .button-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             margin-top: 20px;
-            padding: 20px;
-            background-color: #000000;
-            border-radius: 8px;
-            width: 80%;
-            max-width: 400px;
-            margin: auto;
         }
-        label {
-            display: block;
-            margin-bottom: 10px;
-            color: #f4f4f9;
-            text-align: left;
-            width: 100%;
-        }
-        input[type="email"] {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            color: #000;
-        }
-        button {
+        .start-button {
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
@@ -70,8 +47,9 @@
             color: white;
             font-size: 16px;
             cursor: pointer;
+            text-decoration: none;
         }
-        button:hover {
+        .start-button:hover {
             background-color: #3D15CB;
         }
         .navbar {
@@ -95,18 +73,14 @@
 <body>
     <div>
         <div class="title">Kogzy <span class="subtitle">MDGS</span></div>
-        <div class="description">Let's talk about your success, no-strings-attached and absolutely free.</div>
-        <form action="https://formspree.io/f/xnnaqyww" method="POST">
-            <label>
-                Email:
-                <input type="email" name="email" required>
-            </label>
-            <button type="submit">Send</button>
-        </form>
+        <div class="description">Let's have a conversation about your success, no-strings-attached.</div>
+        <div class="button-container">
+            <a href="https://kogzy.com/contact" class="start-button">Start the Conversation</a>
+        </div>
         <div class="navbar">
-            <a href="#contact">Contact</a>
-            <a href="#services">Services</a>
-            <a href="#insights">Insights</a>
+            <a href="https://kogzy.com/contact">Contact</a>
+            <a href="https://kogzy.com/services">Services</a>
+            <a href="https://kogzy.com/insights">Insights</a>
         </div>
     </div>
 </body>
